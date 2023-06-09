@@ -1,0 +1,248 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Vollkorn', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(253, 254, 254);
+   
+}
+.navbar{
+    display: flex;
+    width: 85%;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 130px;
+}
+.listitem{
+ display: inline-block;
+ list-style: none;
+ margin: 10px 20px;
+ font-family: 'Josefin Sans', sans-serif;
+
+}
+.links{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.links:hover{
+    color: #e60000;
+}
+.title
+{
+ margin-left: 8%;
+ margin-top: 13%;
+}
+.title_h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #e68a00;
+}
+.title span{
+    color:  #990000;
+}
+.download{
+    background-color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    margin: 30px 0px;
+    border-radius: 6px;
+}
+.images{
+    width: 45%;
+    height: 70%;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    top: 250px;
+}
+#ironman{
+    width:70%;
+    height: 110%;
+}
+#shape{
+    width: 100%;
+    height: 120%
+}
+.imggroup{
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: bottom 1.5s, left 1s;
+}
+.images:hover #shape{
+    bottom: 70px;
+}
+.images:hover #ironman{
+    left: 40%;
+}
+.heading{
+    text-align: center;
+}
+#about{
+    margin: 20% 8% 0px 8%;
+
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    font-size: 20px;
+    color:  #cc0000;
+}
+.about_content{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 2rem;
+}
+.ironman_abt{
+
+    margin-top: 5%;
+    width: 80%;
+    height: 80%;
+    border-radius: 1rem;
+}
+.about_details{
+    margin-top: 4%;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    width: 100%;
+}
+.information{
+    margin-top: 2rem;
+}
+.info-box{
+    display: flex;
+    align-items: center;
+    margin: 0 0 1rem 0;
+}
+
+#skill{
+    margin: 10% 8% 0px 8%;
+}
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.skill_img{
+    width: 90%;
+    object-position: center;
+      padding-left: 4rem; 
+}
+.bar_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:0px;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.bar_container h3,span{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.base_bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: #990000;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.knowledge_bar{
+    background-color: #e68a00;
+    width: 97%;
+}
+.power_bar{
+    background-color: #e68a00;
+    width: 82%;
+}
+.combat_bar{
+    background-color: #e68a00;
+    width: 90%;
+}
+.iq_bar{
+    background-color: #e68a00;
+    width: 99%;
+}
+.iconset{
+    display: flex;
+    justify-content: center;
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.icon,.up_arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+#lname{
+    font-size: 50px;
+    color: #990000;
+}
+.foot{
+    background-color:#990000;
+    height: 5rem;
+}
+.icon i{
+    font-size: 20px;
+    color: #e68a00;
+}
+.icon:hover{
+    background-image: linear-gradient(to right,rgba(245, 76, 76, 0.778),rgba(255, 8, 0, 0.862) );
+}
+.icon:hover i{
+    color: #000000;
+    animation: shake 0.2s;
+}
+
+@keyframes shake{
+    20%{
+        transform:rotate(200deg) ;
+    }
+    40%{
+        transform:rotate(400deg) ;
+
+    }
+    60%{
+        transform:rotate(600deg) 
+    }
+    80%{
+    transform:rotate(800deg)
+    }
+}
+.up_arrow{
+    float: right;
+}
+.up_arrow a{
+    color: #ffffff;
+}
